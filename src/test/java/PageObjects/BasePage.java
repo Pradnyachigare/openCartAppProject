@@ -9,6 +9,7 @@ static WebDriver rdriver;
 	
 	public  BasePage(WebDriver ldriver)
 	{
+		ldriver=rdriver;
 		
 	PageFactory.initElements(ldriver,this);
 	}

@@ -1,5 +1,7 @@
 package TestCases;
 
+
+import org.apache.logging.log4j.EventLogger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,16 +11,16 @@ import PageObjects.myAccountPage;
 
 public class TC_001LoginPage extends baseClass{
 	
-	@Test(groups= {"sanity","master","regression"})
+	@Test
 	
 	public void login()
 	{
-		logger.debug("...Application is going on......");
+		//EveLogger.debug("...Application is going on......");
 		try {
 		logger.info("start login method ");//loginpage
 		
 		loginPage lp=new loginPage(driver);
-		lp.autouse(randomeAlphanumeric()+"@gmail.com");
+		lp.autouse("Pradnya@gmail.com");
 		lp.autopass("Pradnya@123");
 		lp.autoLogin();
 		logger.info("login is completed");

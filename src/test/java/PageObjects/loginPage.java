@@ -6,7 +6,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class loginPage extends  BasePage{ 
+public class loginPage extends BasePage{ 
 	
 
 	
